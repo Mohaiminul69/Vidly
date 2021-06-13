@@ -20,7 +20,7 @@ class Movies extends Component {
     sortColumn: { path: "title", order: "asc" },
   };
   componentDidMount() {
-    const genres = [{ _id: "", name: "My Movies" }, ...getGenres()];
+    const genres = [{ _id: "", name: "All Movies" }, ...getGenres()];
     this.setState({ movies: getMovies(), genres });
   }
   handleDelete = (movie) => {
